@@ -1,4 +1,4 @@
-import getVocab, { coding, scripting } from '../api/vocabData';
+import { getVocab, coding, scripting } from '../api/vocabData';
 import showVocab from '../pages/vocab';
 import { signOut } from '../utils/auth';
 

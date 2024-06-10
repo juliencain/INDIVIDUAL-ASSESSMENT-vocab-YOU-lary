@@ -75,7 +75,7 @@ const coding = () => new Promise((resolve, reject) => {
 });
 
 const scripting = () => new Promise((resolve, reject) => {
-  fetch(`${endpoint}/vocab.json?orderBy="catagory"&equalTo="scripting"To`, {
+  fetch(`${endpoint}/vocab.json?orderBy="catagory"&equalTo="scripting"`, {
     method: 'GET',
     headers: {
       'Content-Type': 'application/json',

@@ -3,19 +3,23 @@
 
 
 body {
-  background-color: antiquewhite;
+  background-image: url(https://media2.giphy.com/media/Dg4TxjYikCpiGd7tYs/200w.gif?cid=6c09b9520iw501r08yaj2rfnapkbpkt2jt7cr12knpo1oq6j&ep=v1_gifs_search&rid=200w.gif&ct=g);
   color: brown;
   text-align: center;
   margin-top: 100px;
 }
 #main-container {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  column-gap: 300px;
+  justify-content: space-around;
   margin: 0 auto;
   margin-top: 100px;
   align-content: center;
 
   #add-button {
+    display: flex;
+    flex-wrap: wrap;
     margin: 0 auto;
     text-align: center;
   }
@@ -41,7 +45,11 @@ body {
 
     .card {
       width: 300px;
+      display: flex;
+      justify-content: space-around;
       margin: 5px;
+      background-color: whitesmoke;
+      
 
   
     }

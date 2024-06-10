@@ -8,7 +8,7 @@ const formEvents = () => {
       const payload = {
         title: document.querySelector('#title').value,
         description: document.querySelector('#description').value,
-        category: document.querySelector('#category').value,
+        catagory: document.querySelector('#vocab_catagory').value,
       };
 
       createVocab(payload).then(({ name }) => {
@@ -25,7 +25,7 @@ const formEvents = () => {
       const payload = {
         title: document.querySelector('#title').value,
         description: document.querySelector('#description').value,
-        category: document.querySelector('#category').value,
+        catagory: document.querySelector('#catagory').value,
         firebaseKey,
       };
 

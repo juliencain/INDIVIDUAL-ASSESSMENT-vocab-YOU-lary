@@ -16,11 +16,11 @@ const domEvents = () => {
         });
       }
     }
-    if (e.target.id.includes('edit-book-btn')) {
+    if (e.target.id.includes('edit-vocab-btn')) {
       const [, firebaseKey] = e.target.id.split('--');
       getSingleVocab(firebaseKey).then((bookObj) => addVocabForm(bookObj));
     }
-    if (e.target.id.includes('add--btn')) {
+    if (e.target.id.includes('add-vocab-btn')) {
       addVocabForm();
     }
   });
