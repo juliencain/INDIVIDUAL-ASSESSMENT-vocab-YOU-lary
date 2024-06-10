@@ -21,10 +21,17 @@ const deleteVocab = (firebaseKey) => new Promise((resolve, reject) => {
       'Content-Type': 'application/json',
     },
   })
-    .then((response) => response.json())
-    .then((data) => resolve(data))
+    .then((response) => {
+      if (response.ok) {
+        resolve(); // Resolve with no data if the request is successful
+      } else {
+        // eslint-disable-next-line prefer-promise-reject-errors
+        reject('Error deleting vocab'); // Reject with an error message if request fails
+      }
+    })
     .catch(reject);
 });
+
 const createVocab = (payload) => new Promise((resolve, reject) => {
   fetch(`${endpoint}/vocab.json`, {
     method: 'POST',
