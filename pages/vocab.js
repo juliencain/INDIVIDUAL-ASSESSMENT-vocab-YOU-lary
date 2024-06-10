@@ -11,7 +11,6 @@ const showVocab = (array) => {
   array.forEach((item) => {
     domString += `
       <div class="card">
-        <img class="card-img-top" src=${item.image} alt=${item.title} style="height: 400px;">
         <div class="card-body" style="height: 180px;">
           <h5 class="card-title">${item.title}</h5>
             <p class="card-text bold">${item.category ? `<span class="badge badge-info category-badge"><i class="fa fa-bell" aria-hidden="true"></i> category</span> $${item.description}` : `$${item.description}`}</p>

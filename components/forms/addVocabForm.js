@@ -1,9 +1,7 @@
-import clearDom from '../../utils/clearDom';
 import renderToDOM from '../../utils/renderToDom';
 
 // USING THIS FORM FOR BOTH CREATE AND UPDATE
 const addVocabForm = (obj = {}) => {
-  clearDom();
   const domString = `
     <form id="${obj.firebaseKey ? `update-vocab--${obj.firebaseKey}` : 'submit-vocab'}" class="mb-4">
       <div class="form-group">

@@ -51,8 +51,19 @@ const updateVocab = (payload) => new Promise((resolve, reject) => {
     .then(resolve)
     .catch(reject);
 });
+const getSingleVocab = (firebaseKey) => new Promise((resolve, reject) => {
+  fetch(`${endpoint}/vocab/${firebaseKey}.json`, {
+    method: 'GET',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+  })
+    .then((response) => response.json())
+    .then((data) => resolve(data)) // will resolve a single object
+    .catch(reject);
+});
 const coding = () => new Promise((resolve, reject) => {
-  fetch(`${endpoint}/vocab.json?orderBy="category"&equalTo=coding`, {
+  fetch(`${endpoint}/vocab.json?orderBy="catagory"&equalTo="coding"`, {
     method: 'GET',
     headers: {
       'Content-Type': 'application/json',
@@ -64,7 +75,7 @@ const coding = () => new Promise((resolve, reject) => {
 });
 
 const scripting = () => new Promise((resolve, reject) => {
-  fetch(`${endpoint}/vocab.json?orderBy="category"&equalTo=scripting`, {
+  fetch(`${endpoint}/vocab.json?orderBy="catagory"&equalTo="scripting"To`, {
     method: 'GET',
     headers: {
       'Content-Type': 'application/json',
@@ -76,5 +87,5 @@ const scripting = () => new Promise((resolve, reject) => {
 });
 
 export {
-  getVocab, deleteVocab, coding, scripting, updateVocab, createVocab
+  getVocab, deleteVocab, coding, scripting, updateVocab, createVocab, getSingleVocab
 };
