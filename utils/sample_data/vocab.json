@@ -1,0 +1,44 @@
+{
+  "-QiTsduTahbEQ9eAWxV": {
+    "title": "algorithm",
+    "firebaseKey": "-QiTsduTahbEQ9eAWxV",
+    "description": "a process or set of rules to be followed in calculations or other problem-solving operations, especially by a computer.",
+    "category": "coding",
+    "uid": ""
+  },
+  "-MhBtf6VtkC-EtmJndjm": {
+    "title": "bug",
+    "firebaseKey": "-MhBtf6VtkC-EtmJndjm",
+    "description": "Programmers use the phrase bug to refer to broken code with a fault or flaw. These are pieces of code that cause a program crash or send an error message.",
+    "category": "coding",
+    "uid": ""
+  },
+  "-MiBuwf1BwN4fGavQgR3": {
+    "title": "git",
+    "firebaseKey": "-MiBtwf1BwN9pGavQeR3",
+    "description": "Git is software to track changes in project development, which allows for a full version history of the software. Programmers can access this information in the storage location, referred to as a Github.",
+    "category": "coding",
+    "uid": ""
+  },
+  "-MiBuOfHv9NCKB_cneij": {
+    "title": "Debounce",
+    "firebaseKey": "-MiBuOfHv9NCKB_cneij",
+    "description": "Debounce is a term that is often associated with the act of adding a cool-down time to a function so it doesn't get called rapidly. This can be especially helpful when used in conjunction with the Touched event of parts. Oftentimes, this is accomplished by setting a variable to true at the beginning of a function, and setting it to false again at the end. Then, at the very beginning of the function, if the variable is already true, then you use the 'return' keyword, effectively ending the function.",
+    "category": "scripting",
+    "uid": ""
+  },
+  "-MiBulenBnY8by9Xn7q1": {
+    "title": "environment",
+    "firebaseKey": "-MiBulenBnY8by9Xn7q1",
+    "description": "A scripting environment surrounds you with pre-made functions or values in general. An example of something pre-made in an environment is the print function.",
+    "category": "scripting",
+    "uid": ""
+  },
+  "-MiBv9_aOEJQWoobjz_U": {
+    "title": "method",
+    "firebaseKey": "-MiBv9_aOEJQWoobjz_U",
+    "description": "A method is a function that is casted on an object. They are usually built-in, but you can make them yourself by calling a function within a table by the : character instead of a period.",
+    "category": "scripting",
+    "uid": ""
+  }
+}
